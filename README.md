@@ -1,5 +1,5 @@
 
-# SearchMovieApp 
+# SearchMovieApp 🎞️
 
 This project was created with the objective of putting into practice the knowledge in the following Languages and technologies 
 
