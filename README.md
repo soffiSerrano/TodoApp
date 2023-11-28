@@ -17,6 +17,9 @@ This project was created with the objective of putting into practice the knowled
 
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
+### Expo
+The project is developed and managed with Expo, a platform for building and deploying universal, native-quality apps for iOS, Android, and the web from a single codebase.
+
 ## Steps to Run the Project
 
 ### Prerequisites
