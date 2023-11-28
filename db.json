@@ -1,0 +1,7 @@
+{
+"todos": [
+      { "id": 1, "text": "Hacer la compra", "completed": false },
+      { "id": 2, "text": "Terminar el informe", "completed": true },
+      { "id": 3, "text": "Ir al gimnasio", "completed": false }
+    ]
+}
