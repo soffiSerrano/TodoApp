@@ -1,12 +1,14 @@
-// screens/DetailScreen.js
-
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 
-const DetailScreen = () => {
+const DetailScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Detail Screen</Text>
+      <Button
+        title="Go back to Home Screen"
+        onPress={() => navigation.goBack()}
+      />
     </View>
   );
 };

@@ -1,12 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import StartPage from './app/screens';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>mlkmlkm!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <StartPage/>
   );
 }
 
@@ -18,3 +14,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+

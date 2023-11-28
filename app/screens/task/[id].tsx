@@ -10,4 +10,4 @@ const DetailsTask = ({ navigation }) => {
   );
 };
 
-export default HomeScreen;
+export default DetailsTask;
