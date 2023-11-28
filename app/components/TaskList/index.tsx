@@ -1,7 +1,6 @@
 // components/TaskList.tsx
 import React, { useState } from 'react';
 import { View, Text, Button, TextInput } from 'react-native';
-import { TouchableOpacity } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components/native';
 import TaskCard from '../TaskCard';

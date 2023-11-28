@@ -3,6 +3,8 @@ import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native';
 import { TaskCardContainer,TaskButton } from './style';
+import DeleteIcon from '../DeleteIcon';
+import Icon from 'react-native-vector-icons/FontAwesome'; // Puedes cambiar 'FontAwesome' por el conjunto de iconos que prefieras
 
 interface TaskCardProps {
   text: string;
@@ -20,7 +22,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ text, completed, onToggle, onDelete
         <TaskButton>{completed ? 'Reopen' : 'Complete'}</TaskButton>
       </TouchableOpacity>
       <TouchableOpacity onPress={onDelete}>
-        <TaskButton>Delete</TaskButton>
+        <Icon name="trash-o" size={30} color="#900" /> 
       </TouchableOpacity>
     </TaskCardContainer>
   );
