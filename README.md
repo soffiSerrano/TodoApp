@@ -16,3 +16,12 @@ This project was created with the objective of putting into practice the knowled
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+
+## Steps to Run the Project
+
+### Prerequisites
+Ensure that Node.js is installed on your system.
+
+### Cloning the Repository
+Open a terminal.
+Clone the project repository from GitHub or download it as a ZIP file.
