@@ -29,7 +29,6 @@ const TaskList = () => {
 
   return (
     <Container>
-      <Text>Cards</Text>
       <TextInput
         placeholder="New Task"
         value={newTaskText}

@@ -1,4 +1,4 @@
-import {ADD_TASK, DELETE_TASK, TOGGLE_TASK } from "./action";
+import {LOAD_TASKS,ADD_TASK, DELETE_TASK, TOGGLE_TASK } from "./action";
 
 interface Task {
   id: number;
@@ -10,6 +10,8 @@ const initialState: Task[] = [];
 
 const todoReducer = (state = initialState, action: any) => {
   switch (action.type) {
+    case LOAD_TASKS:
+      return action.payload;
     case ADD_TASK:
       return [
         ...state,
