@@ -1,6 +1,8 @@
-import styled from 'styled-components/native';
+// components/TaskCard.tsx
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
+import styled from 'styled-components/native';
+import { TaskCardContainer,TaskButton } from './style';
 
 interface TaskCardProps {
   text: string;
@@ -9,9 +11,10 @@ interface TaskCardProps {
   onDelete: () => void;
 }
 
+
 const TaskCard: React.FC<TaskCardProps> = ({ text, completed, onToggle, onDelete }) => {
   return (
-    <Task>
+    <TaskCardContainer>
       <TaskText completed={completed}>{text}</TaskText>
       <TouchableOpacity onPress={onToggle}>
         <TaskButton>{completed ? 'Reopen' : 'Complete'}</TaskButton>
@@ -19,7 +22,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ text, completed, onToggle, onDelete
       <TouchableOpacity onPress={onDelete}>
         <TaskButton>Delete</TaskButton>
       </TouchableOpacity>
-    </Task>
+    </TaskCardContainer>
   );
 };
 
@@ -36,9 +39,6 @@ const TaskText = styled.Text<{ completed: boolean }>`
   text-decoration: ${(props) => (props.completed ? 'line-through' : 'none')};
 `;
 
-const TaskButton = styled.Text`
-  color: #900;
-  margin-left: 10px;
-`;
+
 
 export default TaskCard;
