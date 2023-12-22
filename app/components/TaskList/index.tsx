@@ -1,4 +1,3 @@
-// components/TaskList.tsx
 import React, { useState, useEffect, useRef } from "react";
 import { View, Text, Button, TextInput, Animated, Easing } from "react-native";
 
@@ -15,7 +14,7 @@ const TaskList = () => {
 	const [newTaskText, setNewTaskText] = useState("");
 	const [animation] = useState(new Animated.Value(0));
 	const cardScale = useRef(new Animated.Value(0)).current;
-	const [newlyAddedTaskId, setNewlyAddedTaskId] = useState<number | null>(null); // Estado para almacenar el ID de la tarjeta recién agregada
+	const [newlyAddedTaskId, setNewlyAddedTaskId] = useState<number | null>(null);
 
 	const handleDelete = (taskId: number) => {
 		dispatch(deleteTask(taskId));
@@ -28,14 +27,14 @@ const TaskList = () => {
 	const handleAddTask = () => {
 		if (newTaskText.trim() !== "") {
 			const newTask = { id: tasks.length + 1, text: newTaskText };
-			dispatch(addTask(newTaskText)); // Agregar tarea al estado de Redux
-			setNewTaskText(""); // Limpiar el campo de entrada después de agregar la tarea
-			setNewlyAddedTaskId(newTask.id); // Establecer el ID de la tarjeta recién agregada
+			dispatch(addTask(newTaskText)); 
+			setNewTaskText(""); 
+			setNewlyAddedTaskId(newTask.id);
 
 			Animated.sequence([
         Animated.timing(cardScale, {
           toValue: 2,
-          duration: 150, // Reducir a la mitad el tiempo para la primera animación
+          duration: 150, 
           easing: Easing.out(Easing.back(1)),
           useNativeDriver: true,
         }),
@@ -46,7 +45,6 @@ const TaskList = () => {
           useNativeDriver: true,
         }),
       ]).start(() => {
-				// Al finalizar la animación, eliminar el ID de la tarjeta recién agregada
 				setNewlyAddedTaskId(null);
 			});
 		}
@@ -54,7 +52,7 @@ const TaskList = () => {
 
 	useEffect(() => {
 		setLocalTasks(tasks);
-	}, [tasks]); // Actualizar localTasks cuando cambien las tareas en Redux
+	}, [tasks]); 
 
 	return (
 		<Container>

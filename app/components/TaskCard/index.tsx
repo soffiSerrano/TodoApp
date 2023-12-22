@@ -1,4 +1,3 @@
-// components/TaskCard.tsx
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import { TaskCardContainer, TaskButton, TaskText } from "./style";

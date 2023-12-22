@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'; // Puedes cambiar 'FontAwesome' por el conjunto de iconos que prefieras
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const DeleteIcon = ({ onPress }) => {
   return (
