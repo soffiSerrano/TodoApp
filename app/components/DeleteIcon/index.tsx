@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'; // Puedes cambiar 'Fon
 const DeleteIcon = ({ onPress }) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <Icon name="trash-o" size={30} color="#900" /> 
+      <Icon name="trash-o" size={23} color="#900" /> 
     </TouchableOpacity>
   );
 };
